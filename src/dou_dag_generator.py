@@ -227,9 +227,7 @@ class DouDigestDagGenerator:
         schedule = specs.schedule
 
         if schedule is None:
-            schedule = self._get_safe_schedule(
-                specs=specs, default_schedule=self.DEFAULT_SCHEDULE
-            )
+            schedule = None
             is_default_schedule = True
         else:
             is_default_schedule = False

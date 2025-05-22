@@ -1,9 +1,7 @@
 dag:
-  id: discord_example
-  description: DAG de teste de envio de resultados para o Discord
+  id: drive
+  description: DAG que salva resultados no disco
   search:
-    sources:
-    - QD
     terms:
       - lgpd
   report:
