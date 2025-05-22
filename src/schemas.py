@@ -162,6 +162,9 @@ class ReportConfig(BaseModel):
     discord: Optional[dict] = Field(
         default=None, description="Configuração do webhook do Discord para relatórios"
     )
+    drive: Optional[dict] = Field(
+        default=None, description="Configuração de salvamento de resultados em disco"
+    )
     emails: Optional[List[EmailStr]] = Field(
         default=None, description="Lista de endereços de e-mail para enviar o relatório"
     )
