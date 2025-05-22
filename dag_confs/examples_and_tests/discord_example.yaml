@@ -5,15 +5,7 @@ dag:
     sources:
     - QD
     terms:
-      - dados abertos
-      - governo aberto
-      - lei de acesso à informação
-      - engenharia de dados
-      - software livre
-      - código aberto
-      - open source
-      - software publico
       - lgpd
   report:
     discord:
-      webhook: https://discord.com/api/webhooks/105220xxxxxx811250/Q-XsfdnoHtudTQ-8A6zzzzznitai-vi0bGLE7xxxxxxxxxxxxxxxxxxxmx94R3oZ1h0ngl1
+      webhook: https://discord.com/api/webhooks/1365417356150706256/stkPi6sCDUO8vhW0On40vXOtQfn-iGe_YXmbS2nBKzOglXeTxeqWEHpSQxvyDPjNdh1j
