@@ -5,5 +5,5 @@ dag:
     terms:
       - lgpd
   report:
-    discord:
-      webhook: https://discord.com/api/webhooks/1365417356150706256/stkPi6sCDUO8vhW0On40vXOtQfn-iGe_YXmbS2nBKzOglXeTxeqWEHpSQxvyDPjNdh1j
+    drive:
+      ok:

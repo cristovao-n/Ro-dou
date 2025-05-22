@@ -19,7 +19,6 @@ class DriveSender(ISender):
         print("SEND")
         print("RESULTS")
         print(search_report)
-        search_report["timestamp"] = time.time()
-        with open("drive/results.txt", "w") as file:
+        search_report.append({"timestamp": time.time()})
+        with open("drive/results.json", "w") as file:
             json.dump(search_report, file)
-
