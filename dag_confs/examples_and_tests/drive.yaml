@@ -4,6 +4,7 @@ dag:
   search:
     terms:
       - lgpd
+      - energia solar
   report:
     drive:
       ok:

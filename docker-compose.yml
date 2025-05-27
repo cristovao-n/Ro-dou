@@ -100,40 +100,8 @@
           retries: 5
         restart: always
 
-      airflow-webserver:
-        <<: *airflow-common
-        container_name: airflow-webserver
-        command: webserver
-        ports:
-          - 8080:8080
-        healthcheck:
-          test: ["CMD", "curl", "--fail", "http://localhost:8080/health"]
-          interval: 10s
-          timeout: 10s
-          retries: 5
-        restart: always
-
       airflow-scheduler:
         <<: *airflow-common
         container_name: airflow-scheduler
         command: scheduler
         restart: always
-
-      smtp4dev:
-        image: rnwood/smtp4dev:v3
-        restart: always
-        ports:
-          - '5001:80'
-          - '25:25' # Change the number before : to the port the SMTP server should be accessible on
-          - '143:143' # Change the number before : to the port the IMAP server should be accessible on
-        volumes:
-            - smtp4dev-data:/smtp4dev
-        environment:
-          - ServerOptions__HostName=smtp4dev
-
-      # selenium:
-      #     image: ghcr.io/gestaogovbr/selenium:ro-dou
-      #     volumes:
-      #       - /dev/shm:/dev/shm
-    volumes:
-      smtp4dev-data:
